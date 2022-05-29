@@ -1,0 +1,30 @@
+.modify-profile-modal {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin: 10px auto;
+    /* align-items: center;
+    justify-content: center; */
+}
+.modify-profile-modal > {
+    margin: 10px auto;
+}
+textarea {
+    font-family: sans-serif;
+    background: transparent;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+}
+textarea::placeholder {
+    color: whitesmoke;
+}
+@media (max-width: 768px) {
+    .modify-profile-modal {
+        width: 80vw;
+    }
+}
+@media (max-width: 400px) {
+    .modify-profile-modal {
+        width: 80vw;
+    }
+}

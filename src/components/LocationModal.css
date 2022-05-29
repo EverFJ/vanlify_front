@@ -1,0 +1,212 @@
+.location-modal {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    max-width: 90vw;
+    margin: 0 auto;
+    height: 90vh;
+    animation: fade-in 1s ease-in-out;
+    border-radius: 20px;
+    overflow-y: scroll;
+    background: linear-gradient(rgb(2, 56, 69), rgb(0, 0, 0, 0.8));
+}
+@keyframes fade-in {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-20%);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.location-heading {
+    justify-self: flex-start;
+    color: whitesmoke;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 2px solid whitesmoke;
+}
+.location-heading > span {
+    position: absolute;
+    right: 5%;
+}
+.modal-description {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+.address-div {
+    width: 30vw;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+}
+.modal-address {
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px auto;
+}
+.google-link {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+.flag {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    color: whitesmoke;
+    /* background-color: red; */
+    cursor: pointer;
+}
+.flag-text {
+    font-size: 10px;
+}
+.flag:hover {
+    content: Mark as illegal or inappropriate;
+}
+.slide-container {
+    width: 80%;
+    height: 500px;
+    margin: 20px auto;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+}
+.prev-arrow {
+    font-size: 0.5rem;
+    width: 30px;
+    background: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+.next-arrow {
+    background: transparent;
+    font-size: 0.5rem;
+    width: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+.modal-image {
+    width: 100%;
+    height: 350px;
+    margin: 10px auto;
+    object-fit: contain;
+}
+.comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid whitesmoke;
+    /* background-color: whitesmoke; */
+    border-radius: 10px;
+}
+.add-comment {
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+    border-top: 2px solid whitesmoke;
+}
+.comments-heading {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    color: whitesmoke;
+}
+.add-comments-heading {
+    color: whitesmoke;
+    text-align: center;
+}
+.comment-input {
+    min-width: 50%;
+}
+.my-locations-button {
+    margin-top: 5px;
+}
+.delete-button {
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #e03131;
+    color: whitesmoke;
+    cursor: pointer;
+    z-index: 100;
+}
+.modify-button {
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #3633fd;
+    color: whitesmoke;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .slide-container {
+        width: 90%;
+    }
+}
+@media (max-width: 400px) {
+    .location-modal {
+    }
+    .location-heading {
+        font-size: 1.5rem;
+    }
+    .modal-description {
+        font-size: 0.8rem;
+    }
+    .slide-container {
+        width: 95%;
+        height: 200px;
+    }
+    .close-button {
+        top: 50px;
+    }
+    .modal-image {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+    }
+    .address-div {
+        width: 80%;
+    }
+    .comments {
+        font-size: 1rem;
+    }
+    .prev-arrow {
+        /* width: 50px; */
+        font-size: 1rem;
+    }
+    .next-arrow {
+        /* width: 10px; */
+        font-size: 1rem;
+    }
+    .delete-button {
+        padding: 5px 10px;
+        top: 20px;
+    }
+    .modify-button {
+        padding: 5px 10px;
+    }
+    .flag {
+        width: 70px;
+    }
+    .flag-text {
+        text-align: center;
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,212 @@
+.profile-section {
+    display: flex;
+    justify-content: space-around;
+    /* width: 90%; */
+    margin: 20px auto;
+    /* box-shadow: 0 0 10px 2px rgba(172, 172, 172, 0.808); */
+    border-radius: 20px;
+    /* background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)); */
+    /* url("../assets/img/AppBackground1.jpg"); */
+    background-size: cover;
+    /* background-position-y: -300px; */
+    animation: profile-section 1s ease-out;
+}
+@keyframes profile-section {
+    from {
+        transform: translateY(40%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: 30%;
+    border-radius: 15px;
+    padding: 30px;
+    /* box-shadow: 0 0 5px 2px rgba(245, 245, 245, 0.507); */
+
+    background: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8));
+    /* url("../assets/img/LoginBackground.jpg"); */
+    background-size: cover;
+    transform: translateY(10%);
+    transition: all 200ms ease-out;
+}
+.profile-card:hover {
+    transform: translateY(10%) scale(1.1);
+}
+.my-locations {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    max-height: 60vh;
+    width: 30%;
+    overflow-y: auto;
+    padding: 30px;
+    border-radius: 15px;
+    /* border: 2px solid whitesmoke; */
+    /* box-shadow: 0 0 5px 2px rgba(245, 245, 245, 0.521); */
+    background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6));
+    /* url("../assets/img/HomepageMapBackground.jpg"); */
+    background-size: cover;
+    transform: translateY(10%);
+    transition: all 200ms ease-out;
+}
+.my-locations:hover {
+    transform: translateY(10%) scale(1.1);
+}
+.profile-heading {
+    width: 30%;
+    padding: 10px;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+}
+.location-card-heading {
+    width: 60%;
+    padding: 10px;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+}
+.locations-number {
+    color: whitesmoke;
+    margin: 10px auto;
+}
+.avatar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+.avatar div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.avatar div button {
+    width: 90%;
+    padding: 5px;
+    background-color: rgb(2, 56, 69);
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+}
+.avatar div button {
+    transform: scale(1.1);
+}
+.avatar img {
+    width: 90%;
+    border-radius: 50%;
+}
+.avatar-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+}
+.avatar-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(2, 56, 69);
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+.avatar-label {
+    width: 50%;
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.bio {
+    width: 90%;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+}
+.city {
+    min-width: 20%;
+    font-size: large;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+.modify-profile {
+    padding: 5px;
+    background-color: rgb(2, 56, 69);
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+}
+.modify-profile:hover {
+    transform: scale(1.1);
+}
+.username {
+    color: whitesmoke;
+    min-width: 80px;
+    padding: 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    margin: 10px 10px 0 0;
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+    }
+    .profile-card {
+        width: 70%;
+        margin-bottom: 50px;
+    }
+    .my-locations {
+        width: 70%;
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 400px) {
+    .profile-card {
+        width: 90%;
+    }
+    .profile-heading {
+        font-size: 1.4rem;
+    }
+    .my-locations {
+        width: 90%;
+    }
+    .location-card-heading {
+        font-size: 1.5rem;
+    }
+    .avatar-form {
+        width: 80vw;
+    }
+    .avatar-label {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+}
